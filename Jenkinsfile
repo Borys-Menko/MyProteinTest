@@ -1,6 +1,6 @@
 def testParams() {
   def name = params.INPUT
-  sh 'echo $name'
+  sh 'echo hello'
 }
 
 pipeline {
