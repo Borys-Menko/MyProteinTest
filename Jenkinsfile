@@ -15,7 +15,7 @@ pipeline {
         stage("test_params") {
             steps {
               testParams()
-              sh 'echo $params.INPUT'
+              sh 'echo this is stage: ' + params.INPUT
             }
         } 
       }
