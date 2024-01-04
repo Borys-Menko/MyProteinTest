@@ -1,6 +1,6 @@
 def testParams() {
   def name = params.INPUT
-  sh 'echo hello'
+  sh 'echo hello: ' + name 
 }
 
 pipeline {
@@ -15,6 +15,7 @@ pipeline {
         stage("test_params") {
             steps {
               testParams()
+              sh 'echo $params.INPUT'
             }
         } 
       }
