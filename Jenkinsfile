@@ -12,7 +12,7 @@ pipeline {
     }
 
     stages {
-        stage {
+        stage("test_params") {
             steps {
               testParams()
             }
